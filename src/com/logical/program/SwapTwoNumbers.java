@@ -4,14 +4,14 @@ package com.logical.program;
 public class SwapTwoNumbers {
 
 	public static void main(String[] args) {
-		int x =10;
-		int y =20;
-		System.out.println("Before Swaping X= "+x+" Y= "+y);
+		int x = 10;
+		int y = 20;
+		System.out.println("Before Swaping X= " + x + " Y= " + y);
 		int temp;
 		temp = x;
-		x=y;
-		y=temp;
-		System.out.println("After  Swaping X= "+x+" Y= "+y);
+		x = y;
+		y = temp;
+		System.out.println("After  Swaping X= " + x + " Y= " + y);
 	}
 
 }

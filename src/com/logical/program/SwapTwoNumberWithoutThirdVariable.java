@@ -4,13 +4,13 @@ package com.logical.program;
 public class SwapTwoNumberWithoutThirdVariable {
 
 	public static void main(String[] args) {
-		int x =10;
-		int y =20;
-		System.out.println("Before Swaping X= "+x+" Y= "+y);
-		x= x+y;
-		y=x-y;
-		x=x-y;
-		System.out.println("After  Swaping X= "+x+" Y= "+y);
+		int x = 10;
+		int y = 20;
+		System.out.println("Before Swaping X= " + x + " Y= " + y);
+		x = x + y;
+		y = x - y;
+		x = x - y;
+		System.out.println("After  Swaping X= " + x + " Y= " + y);
 
 	}
 

@@ -15,8 +15,8 @@ public class PrimeWithRange {
 					count++;
 				}
 			}
-			if (count == 1){
-				System.out.println("Prime "+i);
+			if (count == 1) {
+				System.out.println("Prime " + i);
 				primes.add(i);
 			}
 		}
