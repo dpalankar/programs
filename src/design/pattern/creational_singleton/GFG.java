@@ -1,4 +1,4 @@
-package design.pattern.singleton;
+package design.pattern.creational_singleton;
 
 // JAVA code to explain cloning 
 // issue with singleton 

@@ -1,5 +1,5 @@
 
-package design.pattern.singleton;
+package design.pattern.creational_singleton;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

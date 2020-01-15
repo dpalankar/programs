@@ -1,5 +1,5 @@
 
-package design.pattern.singleton;
+package design.pattern.creational_singleton;
 
 public class EagerInitializedSingleton {
     
