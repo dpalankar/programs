@@ -1,11 +1,14 @@
-#### Decorator/Wrapper Pattern
-attach a flexible additional responsibilities to an object dynamically.
+#### Flyweight Pattern
+to reuse already existing similar kind of objects by storing them and create new object when no matching object is found.
 
-Decorator design pattern is used to modify the functionality of an object at runtime. At the same time other instances of the same class will not be affected
+Flyweight pattern is primarily used to reduce the number of objects created and to decrease memory footprint and increase performance. 
+
+Flyweight pattern tries to reuse already existing similar kind objects by storing them and creates new object when no matching object is found.
 
 
-Suppose we want to implement different kinds of cars – we can create interface Car to define the assemble method and then we can have a Basic car, further more we can extend it to Sports car and Luxury Car. The implementation hierarchy will look like below image.
-![alt composite](https://github.com/dpalankar/programs/blob/master/src/design/pattern/structural_decorator/decorator.png)
-But if we want to get a car at runtime that has both the features of sports car and luxury car, then the implementation gets complex and if further more we want to specify which features should be added first, it gets even more complex. Now imagine if we have ten different kind of cars, the implementation logic using inheritance and composition will be impossible to manage. To solve this kind of programming situation, we apply decorator pattern in java.
+Flyweight design pattern is used when we need to create a lot of Objects of a class. Since every object consumes memory space that can be crucial for low memory devices, such as mobile devices or embedded systems, flyweight design pattern can be applied to reduce the load on memory by sharing objects.
 
-![alt composite1](https://github.com/dpalankar/programs/blob/master/src/design/pattern/structural_decorator/decorator.png)
+![alt flyweight](https://github.com/dpalankar/programs/blob/master/src/design/pattern/structural_flyweight/flyweight.png)
+
+#### Flyweight Design Pattern Example in JDK
+All the wrapper classes valueOf() method uses cached objects showing use of Flyweight design pattern. The best example is Java String class String Pool implementation.

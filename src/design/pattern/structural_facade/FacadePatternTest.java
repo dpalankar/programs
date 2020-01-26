@@ -3,10 +3,6 @@ package design.pattern.structural_facade;
 
 import java.sql.Connection;
 
-import com.journaldev.design.facade.HelperFacade;
-import com.journaldev.design.facade.MySqlHelper;
-import com.journaldev.design.facade.OracleHelper;
-
 public class FacadePatternTest {
 
 	public static void main(String[] args) {
