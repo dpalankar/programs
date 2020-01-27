@@ -1,12 +1,13 @@
-#### Interpreter Pattern
-It is used to defines a grammatical representation for a language and provides an interpreter to deal with this grammar.
+#### Iterator Pattern
+to access the elements of an aggregate object sequentially without exposing its underlying implementation.
 
-The best example of this pattern is java compiler that interprets the java source code into byte code that is understandable by JVM. Google Translator is also an example of an interpreter pattern where the input can be in any language and we can get the output interpreted in another language..
+The Iterator pattern is also known as Cursor.
 
-Let’s say we have a class that can run some command on the system. Now if we are using it, its fine but if we want to give this program to a client application, it can have severe issues because client program can issue command to delete some system files or change some settings that you don’t want.
+Iterator pattern in one of the behavioral pattern and it’s used to provide a standard way to traverse through a group of Objects.
 
-![alt composite1](https://github.com/dpalankar/programs/blob/master/src/design/pattern/behavioral_interpreter/interpreter.png)
+Iterator pattern is not only about traversing through a collection, but we can also provide different kind of iterators based on our requirements. Iterator pattern hides the actual implementation of traversal through the collection and client programs just use iterator methods.
 
-Chain of Responsibility Pattern Examples in JDK
-java.util.logging.Logger#log()
-javax.servlet.Filter#doFilter()
+![alt composite1](https://github.com/dpalankar/programs/blob/master/src/design/pattern/behavioral_iterator/iterator.png)
+
+Iterator Design Pattern in JDK
+We all know that Collection framework Iterator is the best example of iterator pattern implementation but do you know that java.util.Scanner class also Implements Iterator interface. Read this post to learn about Java Scanner Class.
