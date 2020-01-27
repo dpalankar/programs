@@ -14,5 +14,4 @@ Since we code in terms of interface in java, we can have FileSystemReceiver inte
 ![alt composite1](https://github.com/dpalankar/programs/blob/master/src/design/pattern/behavioral_command/command.png)
 
 Chain of Responsibility Pattern Examples in JDK
-java.util.logging.Logger#log()
-javax.servlet.Filter#doFilter()
+Runnable interface (java.lang.Runnable) and Swing Action (javax.swing.Action) uses command pattern.
