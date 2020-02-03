@@ -1,12 +1,19 @@
 #### Interpreter Pattern
-It is used to defines a grammatical representation for a language and provides an interpreter to deal with this grammar.
+just define a one-to-one dependency so that when one object changes state, all its dependents are notified and updated automatically.
 
-The best example of this pattern is java compiler that interprets the java source code into byte code that is understandable by JVM. Google Translator is also an example of an interpreter pattern where the input can be in any language and we can get the output interpreted in another language..
+The Memento pattern is also known as Dependents or Publish-Subscribe..
 
-Let’s say we have a class that can run some command on the system. Now if we are using it, its fine but if we want to give this program to a client application, it can have severe issues because client program can issue command to delete some system files or change some settings that you don’t want.
+Observer design pattern is useful when you are interested in the state of an object and want to get notified whenever there is any change. In observer pattern, the object that watch on the state of another object are called Observer and the object that is being watched is called Subject.
 
-![alt composite1](https://github.com/dpalankar/programs/blob/master/src/design/pattern/behavioral_interpreter/interpreter.png)
+Java provides an inbuilt platform for implementing Observer pattern through java.util.Observable class and java.util.Observer interface. However, it’s not widely used because the implementation is really simple and most of the times we don’t want to end up extending a class just for implementing Observer pattern as java doesn’t provide multiple inheritances in classes.
 
-Chain of Responsibility Pattern Examples in JDK
-java.util.logging.Logger#log()
-javax.servlet.Filter#doFilter()
+Java Message Service (JMS) uses Observer pattern along with Mediator pattern to allow applications to subscribe and publish data to other applications.
+
+Observer design pattern is also called as publish-subscribe pattern. Some of it’s implementations are;
+
+java.util.EventListener in Swing
+javax.servlet.http.HttpSessionBindingListener
+javax.servlet.http.HttpSessionAttributeListener
+
+![alt composite1](https://github.com/dpalankar/programs/blob/master/src/design/pattern/behavioral_observer/observer.png)
+
