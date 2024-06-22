@@ -1,4 +1,4 @@
-package stream.example;
+package stream.programs;
 
 public class StreamExample {
     public static void main(String[] args) {

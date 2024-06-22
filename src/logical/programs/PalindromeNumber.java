@@ -1,4 +1,4 @@
-package com.logical.program;
+package logical.programs;
 
 //Program to find whether a string or number is palindrome or not.
 public class PalindromeNumber {

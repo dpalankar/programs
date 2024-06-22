@@ -1,4 +1,4 @@
-package com.logical.program;
+package logical.programs;
 
 //Program to find the second highest number in an array.
 public class SecondHighestNumberInArray {

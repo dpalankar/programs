@@ -1,4 +1,4 @@
-package com.logical.program;
+package logical.programs;
 
 //Program to swap two numbers with using the third variable.
 public class SwapTwoNumbers {

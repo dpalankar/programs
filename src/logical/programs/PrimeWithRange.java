@@ -1,4 +1,4 @@
-package com.logical.program;
+package logical.programs;
 
 import java.util.ArrayList;
 import java.util.List;

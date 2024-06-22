@@ -1,4 +1,4 @@
-package stream.example;
+package stream.programs;
 
 /**
  * The Class Student.

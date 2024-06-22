@@ -1,4 +1,4 @@
-package com.logical.program;
+package logical.programs;
 
 //Program to find whether a number is prime or not.
 public class Prime {

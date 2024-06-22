@@ -1,4 +1,4 @@
-package com.logical.program;
+package logical.programs;
 
 //Program to check Armstrong number.
 //153 = 1*1*1 + 5*5*5 + 3*3*3 = 1 + 125 + 27 = 153

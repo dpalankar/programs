@@ -1,6 +1,4 @@
-package com.logical.program;
-
-import java.util.Scanner;
+package logical.programs;
 
 //3 33 333 3333 33333
 public class NumberOperation {
