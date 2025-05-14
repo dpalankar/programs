@@ -22,8 +22,8 @@ public class StudentStreamExample {
 //                .forEach(System.out::println);
 
         // 2- Group The Student By Department Names
-//        students.stream().collect(Collectors.groupingBy(s->s.getDepartmantName()))
-//                .forEach((s,v)->System.out.println(s+":"+v));
+        students.stream().collect(Collectors.groupingBy(s->s.getDepartmantName()))
+                .forEach((s,v)->System.out.println(s+":"+v));
 
         // 3- Find the total count of student using stream
 //        System.out.println("Count of student :"+  students.stream().count());
