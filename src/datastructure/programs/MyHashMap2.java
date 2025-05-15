@@ -101,4 +101,17 @@ public class MyHashMap2 implements MyHash {
             }
         }
     }
+
+    public static void main(String[] args) {
+        MyHash map = new MyHashMap2();
+
+        for (int i = 0; i < 20; i++) {
+            map.put(i, i * 100);
+        }
+
+        System.out.println("Value at key 5: " + map.get(5));
+        System.out.println("Value at key 15: " + map.get(15));
+        map.remove(5);
+        System.out.println("Value at key 5 after removal: " + map.get(5));
+    }
 }

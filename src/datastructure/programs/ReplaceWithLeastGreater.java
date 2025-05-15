@@ -2,7 +2,7 @@ package datastructure.programs;
 
 import java.util.Arrays;
 
-public class LeastMaxReplace1 {
+public class ReplaceWithLeastGreater {
     public static void main(String[] args) {
         int[] arr1 = {3, 4, 7, 5};
         int[] arr2 = {2, 4, 6, 8};

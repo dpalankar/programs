@@ -82,4 +82,28 @@ public class MyHashMap3<K, V> implements MyHash3<K, V> {
 
         return null; // key did not exist before
     }
+
+    public static void main(String[] args) {
+        MyHash3 map = new MyHashMap3();
+        map.put(0, 0);
+        map.put(16, 16);
+        map.put(32, 32);
+        map.put(1, 10);
+        map.put(2, 20);
+        map.put(3, 30);
+        map.put(4, 40);
+        System.out.println(map.get(1));  // Output: 10
+        map.remove(1);
+        System.out.println(map.get(1));  // Output: -1
+
+        MyHash3 map2 = new MyHashMap3();
+        map2.put("abc","ABC");
+        map2.put("pqr","PQR");
+        map2.put("xyz","XYZ");
+
+        System.out.println(map2.get("pqr"));  // Output: PQR
+        map2.remove("pqr");
+        System.out.println(map2.get(1));  // Output: null
+
+    }
 }

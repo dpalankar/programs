@@ -8,8 +8,9 @@ This repository contains a list of complex data structure implementations in Jav
 ## 📌 Program: Own HashMap
 
 **Java Classes:**
-- `MyHashMap`
-- `MyHashMapMain`
+- `MyHashMap1` // Simple with support of integer
+- `MyHashMap2` // Load factor
+- `MyHashMap3` // Generic Approach
 
 Create your own `HashMap` class using the following interface:
 
@@ -35,6 +36,8 @@ Implement the Rope data structure for storing and manipulating long strings effi
 ## 📌 Program: LeastMax Replacement
 
 **Java Classes:**
+- `ReplaceWithLeastGreater`
+- `ReplaceWithLeastGreater1`
 - `ReplaceWithLeastGreaterBinary`
 
 Replace each element in array 2 with the least greater element from array 1.
@@ -42,9 +45,9 @@ Replace each element in array 2 with the least greater element from array 1.
 **Example:**
 
 ```java
-arr1 = [3, 4, 7, 5];
-arr2 = [2, 4, 6, 8];
-Output = [3, 5, 7, 8]
+int[] arr1 = [3, 4, 7, 5];
+int[] arr2 = [2, 4, 6, 8];
+int[] Output = [3, 5, 7, 8]
 ```
 
 ---

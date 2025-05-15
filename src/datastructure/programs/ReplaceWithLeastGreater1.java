@@ -2,7 +2,7 @@ package datastructure.programs;
 
 import java.util.Arrays;
 
-public class LeastMaxReplace {
+public class ReplaceWithLeastGreater1 {
     public static int[] replaceWithLeastMax(int[] arr1, int[] arr2) {
         Arrays.sort(arr1); // sort for predictable order
         int[] result = new int[arr2.length];
