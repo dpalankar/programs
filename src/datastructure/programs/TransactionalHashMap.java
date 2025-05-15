@@ -91,30 +91,20 @@ public class TransactionalHashMap<K, V> {
         map.put("a", "1");
         map.put("b", "2");
         System.out.println("a = " + map.get("a")); // 1
-        map.print();
-        System.out.println("------------------------------------------");
 
         map.begin();
         map.put("a", "3");
         map.delete("b");
         System.out.println("a = " + map.get("a")); // 3
         System.out.println("b = " + map.get("b")); // null
-        map.print();
-        System.out.println("------------------------------------------");
 
         map.rollback();
         System.out.println("a = " + map.get("a")); // 1
         System.out.println("b = " + map.get("b")); // 2
-        map.print();
-        System.out.println("------------------------------------------");
 
         map.begin();
         map.delete("a");
-        map.put("c","4");
-        map.print();
         map.commit();
         System.out.println("a = " + map.get("a")); // null
-        map.print();
-        System.out.println("------------------------------------------");
     }
 }
