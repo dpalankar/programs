@@ -103,3 +103,24 @@ void put(int key, int value)    // Update the key if it exists, else insert. Evi
 - Both `get` and `put` must run in **O(1)** average time complexity.
 
 ---
+
+## 📌 Program: RightViewofTree
+
+**Java Classes:**
+- `RightViewOfBinaryTree`
+
+The Right View of a Binary Tree refers to the set of nodes visible when the tree is viewed from the right side.
+
+**Examples: 1,3,6,7**
+
+```
+                 1
+                / \
+               2   3
+              / \   \
+             4   5   6
+                      \
+                       7
+```
+
+---
