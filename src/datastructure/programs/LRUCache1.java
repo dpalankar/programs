@@ -3,21 +3,9 @@ package datastructure.programs;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LRUCache1 {
-
-    // Node class for doubly linked list
-    private static class Node {
-        int key, value;
-        Node prev, next;
-
-        Node(int key, int value) {
-            this.key = key;
-            this.value = value;
-        }
-    }
-
+public class LRUCache1<K,V> {
     private final int capacity;
-    private final Map<Integer, Node> map;
+    private final Map<K, Node> map;
     private final Node head, tail;
 
     public LRUCache1(int capacity) {
@@ -32,16 +20,16 @@ public class LRUCache1 {
         tail.prev = head;
     }
 
-    public int get(int key) {
+    public V get(K key) {
         if (!map.containsKey(key)) {
-            return -1;
+            return null;
         }
         Node node = map.get(key);
         moveToFront(node);
-        return node.value;
+        return (V) node.value;
     }
 
-    public void put(int key, int value) {
+    public void put(K key, int value) {
         if (map.containsKey(key)) {
             Node node = map.get(key);
             node.value = value;
@@ -63,6 +51,18 @@ public class LRUCache1 {
         node.next.prev = node.prev;
     }
 
+    // Node class for doubly linked list
+    private static class Node <K,V>{
+        K key;
+        V value;
+        Node prev, next;
+
+        Node(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+    }
+
     private void addToFront(Node node) {
         node.next = head.next;
         node.prev = head;
@@ -76,5 +76,14 @@ public class LRUCache1 {
         addToFront(node);
     }
 
+    public void printCache() {
+        System.out.println("----------------------------");
+        for (Map.Entry<K, Node> entry : map.entrySet()) {
+            K key = entry.getKey();
+            Node node = entry.getValue();
+            System.out.print("[" + node.key.toString() + "=" + node.value.toString() + "] ");
+        }
+        System.out.println("\n----------------------------");
+    }
 
 }

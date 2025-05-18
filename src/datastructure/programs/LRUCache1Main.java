@@ -11,15 +11,18 @@ public class LRUCache1Main {
         System.out.println("Put(2, 2)");
         cache.put(2, 2);
 
+        cache.printCache();
+
         System.out.println("Get(1): " + cache.get(1)); // returns 1
 
         System.out.println("Put(3, 3)");
         cache.put(3, 3);    // evicts key 2
+        cache.printCache();
 
         System.out.println("Get(2): " + cache.get(2)); // returns -1 (not found)
-
         System.out.println("Put(4, 4)");
         cache.put(4, 4);    // evicts key 1
+        cache.printCache();
 
         System.out.println("Get(1): " + cache.get(1)); // returns -1 (not found)
         System.out.println("Get(3): " + cache.get(3)); // returns 3
